@@ -574,14 +574,13 @@
   #container-h1 {
     font-size: 1.2rem;
   }
-
   .instagram {
     height: 20em;
   }
-
   .lightPollution, .aboutMe {
     background-color: orange;
     height: 40em;
+    width: 100vw;
   }
   .lpimg, .aboutmeimg {
     max-width: 12em;
