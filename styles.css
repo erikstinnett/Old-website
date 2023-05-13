@@ -561,7 +561,7 @@
   }
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 430px) {
   .store {
     background-color: orange;
     flex-wrap: wrap;
