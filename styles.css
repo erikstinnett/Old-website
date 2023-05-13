@@ -709,14 +709,14 @@ color: #ffd900;
   background-color: blue;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  height: 70em;
+  height: 40em;
 
 }
 .print-thumbnails {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column;
+          flex-direction: row;
 }
 .print-thumbnails img {
   max-width: 10em;
@@ -745,25 +745,41 @@ color: #ffd900;
   body {
     width: 100vw;
   }
+
+  .banner-container {
+    width: 90vw;
+  }
 .store {
   background-color: orange;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  height: 58em;
+  height: 30em;
+  width: 90vw;
+}
+.print-thumbnails {
+  flex-direction: row;
 }
 .print-thumbnails img {
-  max-width: 8em;
+  width: 10em;
+  object-fit: cover;
   height: 12em;
 }
 #container-h1 {
   font-size: 1.2rem;
 }
 .instagram {
-  height: 20em;
+  height: 30em;
+  width: 90vw;
+}
+.instagram figure {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
 }
 .lightPollution, .aboutMe {
   background-color: orange;
   height: 40em;
+  width: 90vw;
+
 }
 .lpimg, .aboutmeimg {
   max-width: 12em;
