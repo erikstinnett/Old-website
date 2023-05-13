@@ -768,7 +768,7 @@ color: #ffd900;
   font-size: 1.2rem;
 }
 .instagram {
-  height: 30em;
+  height: 28em;
   width: 90vw;
 }
 .instagram figure {
@@ -802,6 +802,19 @@ color: #ffd900;
   font-size: 1rem;
 }
 }
+
+@media screen and (max-width: 400px) {
+.store {
+  background-color: purple;
+  flex-direction: column;
+  height: 58em;
+}
+
+.instagram {
+  height: 20em;
+}
+}
+
 
 /* Desktop: 1200px
 laptop:1024px
