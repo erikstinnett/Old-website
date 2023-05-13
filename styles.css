@@ -375,10 +375,6 @@
   position: relative;
 }
 
-#lp-container-h2 {
-  text-align: center;
-}
-
 #container-btn {
   background: #caac00;
   border: none;
@@ -416,7 +412,7 @@
 .paragraph, .aboutMeParagraph {
   margin-top: 1em;
   width: 40%;
-  height: 30%;
+  height: 100%;
   margin-left: 5em;
   margin-right: 1em;
   line-height: 1.5em;
@@ -504,15 +500,17 @@
   #container-h1 {
     font-size: 2rem;
   }
-  .lightPollution {
+  .lightPollution, .aboutMe {
     height: 35em;
+    background-color: yellow;
   }
-  .lpimg {
-    max-width: 15em;
+  #container-btn {
+    font-size: 1rem;
+  }
+  .lpimg, .aboutmeimg {
+    max-width: 20em;
     height: auto;
-    object-fit: contain;
   }
-
 }
 
 @media screen and (max-width: 1430px) {
@@ -547,9 +545,19 @@
   #container-h1 {
     font-size: 1.4rem;
   }
-
   .instagram {
     height: 30em;
+  }
+  .lightPollution, .aboutMe {
+    height: 41em;
+    background-color: blue;
+  }
+  .paragraph, .aboutMeParagraph {
+    line-height: 1.1rem;
+    margin-left: 1em;
+  }
+  #container-btn {
+    font-size: 1rem;
   }
 }
 
@@ -570,9 +578,23 @@
   .instagram {
     height: 20em;
   }
-  .lig
-  .lp-second-container {
+
+  .lightPollution, .aboutMe {
+    background-color: orange;
+    height: 40em;
+  }
+  .lpimg, .aboutmeimg {
+    max-width: 12em;
+    margin-left: 0;
+    align-self: center;
+  }
+  .lp-second-container, .aboutme-second-container {
     flex-direction: column;
+    align-items: center;
+  }
+  .paragraph, .aboutMeParagraph{
+    width: 90%;
+    font-size: 1rem;
   }
 }
 
