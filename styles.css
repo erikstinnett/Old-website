@@ -291,7 +291,7 @@
   background: rgba(0,0,0,0.5);
   height: 35em;
   width: 90%;
-  margin-bottom: 1em;
+  margin-bottom: 3em;
   justify-content: center;
   display: flex;
   flex-direction: column;
@@ -311,20 +311,14 @@
   height: 30em;
   object-fit: cover;
   margin: 10px;
-  /* width: 20em;
-  height: 25em;
-  object-fit: cover; */
+  margin-bottom: 1em;
 }
 
-.store button {
-  background: #caac00;
-  border: none;
-  color: white;
-  padding: 10px 20px;
-  font-size: 1.5rem;
-  text-decoration: none;
-  outline: none;
-  border-radius: 4px;
+#container-h1{
+  color: #caac00;
+  font-size: 2.5rem;
+  margin-top: 0.5em;
+  margin-bottom: 0.1em;
 }
 
 .store img:hover {
@@ -346,7 +340,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 1em;
+  margin-bottom: 3em;
   justify-content: center;
 }
 
@@ -354,6 +348,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-bottom: 1em;
 }
 
 .instagram button {
@@ -368,24 +363,23 @@
   margin-top: 0.5em;
 }
 
-.instagram button:hover {
-  background: #635400;
-  transition: all 0.3s ease;
-}
-
-
-.lightPollution {
+.lightPollution, .aboutMe {
   background: rgba(0,0,0,0.5);
   height: 40em;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 1em;
+  margin-bottom: 3em;
   width: 90%;
   color: #fff;
   position: relative;
 }
-.lightPollution button {
+
+#lp-container-h2 {
+  text-align: center;
+}
+
+#container-btn {
   background: #caac00;
   border: none;
   color: white;
@@ -394,65 +388,45 @@
   text-decoration: none;
   outline: none;
   border-radius: 4px;
-  margin-top: 0.5em;
+  margin-bottom: 1em;
 }
 
-.lightPollution button:hover {
+.lightPollution button:hover, .aboutMe button:hover {
   background: #635400;
   transition: all 0.3s ease;
 }
 
-.lightPollution h1 {
-  color: #caac00;
-  margin-top: 1rem;
-  font-size: 3rem;
+.lp-second-container, .aboutme-second-container {
+  flex-direction: row;
+  display: flex;
+  height: 100%;
+  width: 100%;
 }
 
-.lpimg {
+.lpimg, .aboutmeimg {
   width: 23em;
-  display: flex;
-  height: 30em;
+  height: auto;
   object-fit: cover;
-  align-self: flex-start;
-  position: absolute;
-  margin-top: 1em;
   margin-left: 1em;
+  margin-top: 1em;
+  align-self: flex-start;
+
 }
 
-.paragraph {
+.paragraph, .aboutMeParagraph {
+  margin-top: 1em;
   width: 40%;
-}
-.aboutMe {
-  background: rgba(0,0,0,0.5);
-  height: 40em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 1em;
-  width: 90%;
-  color: #fff;
-  position: relative;
+  height: 30%;
+  margin-left: 5em;
+  margin-right: 1em;
+  line-height: 1.5em;
 }
 
-.aboutMe h1, .bio-container h1 {
+
+.bio-container h1 {
   color: #caac00;
   margin-top: 1rem;
   font-size: 3rem;
-}
-
-.aboutMeParagraph {
-  width: 40%;
-}
-
-.aboutMe img {
-  width: 35vh;
-  display: 23em;
-  height: 30em;
-  object-fit: cover;
-  align-self: flex-start;
-  position: absolute;
-  margin-top: 1em;
-  margin-left: 1em;
 }
 
 .footer {
@@ -513,7 +487,11 @@
   color: #ffd900;
 }
 
-/* Media queries for STORE container */
+
+
+
+
+/* Media queries */
 @media screen and (max-width: 1760px) {
   .store {
     background-color: yellow;
@@ -523,14 +501,18 @@
     max-width: 15em;
     height: 22.5em;
   }
-  .store div{
-    flex: 0 0 100%;
-    text-align: right;
+  #container-h1 {
+    font-size: 2rem;
   }
-  .store button {
-    padding: 10px 20px;
-    font-size: 1.3rem;
+  .lightPollution {
+    height: 35em;
   }
+  .lpimg {
+    max-width: 15em;
+    height: auto;
+    object-fit: contain;
+  }
+
 }
 
 @media screen and (max-width: 1430px) {
@@ -543,9 +525,8 @@
     max-width: 10em;
     height: 15em;
   }
-  .store button {
-    padding: 10px 20px;
-    font-size: 1.1rem;
+  #container-h1 {
+    font-size: 1.8rem;
   }
 }
 
@@ -563,9 +544,12 @@
     max-width: 10em;
     height: 15em;
   }
-  .store button {
-    padding: 10px 20px;
-    font-size: 0.9rem;
+  #container-h1 {
+    font-size: 1.4rem;
+  }
+
+  .instagram {
+    height: 30em;
   }
 }
 
@@ -578,6 +562,17 @@
   .print-thumbnails img {
     max-width: 8em;
     height: 12em;
+  }
+  #container-h1 {
+    font-size: 1.2rem;
+  }
+
+  .instagram {
+    height: 20em;
+  }
+  .lig
+  .lp-second-container {
+    flex-direction: column;
   }
 }
 
