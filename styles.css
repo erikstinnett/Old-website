@@ -1,4 +1,11 @@
 /*
+* Prefixed by:
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+/*
 * Prefixed by https://autoprefixer.github.io
 * PostCSS: v8.4.14,
 * Autoprefixer: v10.4.7
@@ -59,6 +66,7 @@ body
       -ms-flex-align: center;
           align-items: center;     /* Center the item vertically */
   font-size: 1.2em;      /* 1 rem = 16 px. 1.2rem == 19.2px*/
+  position: -webkit-sticky;
   position: sticky;       /* Keeps position absolute */
   top: 0;                 
   z-index: 999;           /* Position of navbar in relation to other (z axis). 999 puts navbar at very front */
@@ -734,6 +742,9 @@ color: #ffd900;
 }
 
 @media screen and (max-width: 760px) {
+  body {
+    width: 100vw;
+  }
 .store {
   background-color: orange;
   -ms-flex-wrap: wrap;
@@ -753,13 +764,12 @@ color: #ffd900;
 .lightPollution, .aboutMe {
   background-color: orange;
   height: 40em;
-  width: 100vw;
 }
 .lpimg, .aboutmeimg {
   max-width: 12em;
   margin-left: 0;
+  -ms-grid-row-align: center;
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
       align-self: center;
 }
 .lp-second-container, .aboutme-second-container {
@@ -782,4 +792,3 @@ laptop:1024px
 tablet:768px
 phone:480px
 */
-
