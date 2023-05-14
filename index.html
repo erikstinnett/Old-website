@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="mediaquery.css">
+    <link rel="stylesheet" href="static.css">
     <script src="https://kit.fontawesome.com/c7601ac588.js" crossorigin="anonymous"></script>
 
 </head>
@@ -15,80 +16,31 @@
     
     <nav class ="navbar">    <!-- Navbar affects everything in the navbar-->
         <div class="navbar_container">  <!-- Affects logo + name-->
-            <a href="/"id="navbar_logo"> <!-- Top left of navbar: just logo class--> 
-                <div class="logo"><img src="icons/LOGO.svg" width="50" height="50"></div>Stinnett Photography <!-- subclass for image/icon-->
+            <a href="index.html"id="navbar_logo"> <!-- Top left of navbar: just logo class--> 
+                <div class="logo">
+                    <img id="camera-logo" src="icons/LOGO.svg" width="50" height="50"></div>
+                    <span id="navbar-logo">Stinnett Photography</span> <!-- subclass for image/icon-->
             </a> 
-            <div class="navbar_toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+            <div class="nav-container">
+                <div class="navbar-links" id="navbar-links">
+                    <a href="index.html">Home</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="lightpollution.html">Light Pollution</a>
+                    <a href="aboutme.html">About Me</a>
+                    <a id="navbar_btn" href="#">Shop</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars fa-2x"></i>
+                      </a>
+                </div>
             </div>
-            <ul class="navbar_menu">
-                <li class="navbar_item">    <!-- Class for all the navbar items/links-->
-                    <a href="index.html" class="navbar_links">Home</a> <!--Home link-->
-                </li>
-                <li class="navbar_item">    <!-- Class for all the navbar items/links-->
-                    <a href="gallery.html" class="navbar_links">Gallery</a> <!--Home link-->
-                </li>
-                <li class="navbar_item">    <!-- Class for all the navbar items/links-->
-                    <a href="lightpollution.html" class="navbar_links">Light Pollution</a> <!--Home link-->
-                </li>
-                <li class="navbar_item">    <!-- Class for all the navbar items/links-->
-                    <a href="aboutme.html" class="navbar_links">About Me</a> <!--Home link-->
-                </li>
-                <li class = "navbar_btn"> <!-- Class for "SHOP" button-->
-                    <a href="" class="button">Shop</a>
-                </li>
-            </ul>
         </div>
     </nav>
-
-    <!-- Slideshow container -->
-   <!-- <div class="slideshow-container">
-
-        <div class="mySlides fade">
-            <div class="numbertext">1 / 3</div>
-            <img src="images/hh.jpg" style="width:100%">
-            <div class="text">The Horsehead Nebula</div>
-        </div>
-        
-        <div class="mySlides fade">
-            <div class="numbertext">2 / 3</div>
-            <img src="images/slide2.png" style="width:100%">
-            <div class="text">The Great Sand Dunes National Park</div>
-        </div>
-        
-        <div class="mySlides fade">
-            <div class="numbertext">3 / 3</div>
-            <img src="images/slide4.jpg" style="width:100%">
-            <div class="text">The Milky Way</div>
-        </div>
-        
-        <a class="prev" onclick="plusSlides(-1)">❮</a>
-        <a class="next" onclick="plusSlides(1)">❯</a>
-        
-        </div>
-        <br>
-        
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span> 
-            <span class="dot" onclick="currentSlide(2)"></span> 
-            <span class="dot" onclick="currentSlide(3)"></span> 
-        </div>
-    </div>  -->
     <!-- Main webpage-->
     <div class="main">
         <div class="main_container">
             <div class="banner-container">
                 <img id="banner" src="images/banner.jpg" alt="">
             </div>
-
-            <div class="bio-container">
-                <h1>Welcome!</h1>
-                <p>Welcome to my website!</p>
-            </div>
-
-
 
             <div class="store">
                 <h1 id="container-h1">THE PRINTS</h1>
@@ -101,8 +53,6 @@
                     </div>
                 </a>
             </div>
-
-
 
             <div class="instagram">
                 <h1 id="container-h1">INSTAGRAM</h1>
@@ -169,28 +119,16 @@
             </div>
         </div>
     </div>
-         <!--   <div class="about">
-                <h1>About Me</h1>
-                <p>My name is Erik Stinnett and I am a 21-year-old astrophotographer from Arkansas. <br clear="right">I began my astrophotography journey in October of 2019, when I took my first photo <br>of the moon using an iphone
-                    and a Meade Lx200 8". Ever since, I've been hooked on <br clear="right">astrophotography and sharing the beauty of space through my images. <br><br>
-                    <button>Click here for more information about me, what I do, and my gear!</button>
 
-                </p>
-                <img src="images/me.jg" alt="">
-            </div>
-        </div>
-    </div>
-
-
-    <div class="footer">
-        <h2>Find me on social media:</h2>
-        <div class="socials">
-            <a href="https://www.instagram.com/astro_panda42/" class="fa fa-instagram"></a>
-            <a href="https://www.facebook.com/profile.php?id=100004587377124" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-linkedin"></a>
-        </div>
-    -->
-    <script src="app.js"></script>
-
+    <script>
+        function myFunction() {
+          var x = document.getElementById("navbar-links");
+          if (x.className === "navbar-links") {
+            x.className += " responsive";
+          } else {
+            x.className = "navbar-links";
+          }
+        }
+    </script>
 </body>
 </html> 

@@ -51,301 +51,6 @@ body
   background-position: 50% 40%;
 }
 
-/* Affects the navbar class */
-.navbar 
-{
-  background: #000;
-  height: 4em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; /* Center the item horizontally */
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;     /* Center the item vertically */
-  font-size: 1.2em;      /* 1 rem = 16 px. 1.2rem == 19.2px*/
-  position: -webkit-sticky;
-  position: sticky;       /* Keeps position absolute */
-  top: 0;                 
-  z-index: 999;           /* Position of navbar in relation to other (z axis). 999 puts navbar at very front */
-}
-
-/* Affects logo + "Stinnett photography" */
-.navbar_container 
-{
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  height: 5em;
-  z-index: 1;
-  width: 100%;
-  max-width: 2500px;
-  margin-right: auto; /* Space around border to the right */
-  margin-left: auto;  /* Space around border to the left */
-  padding-right: 3em; 
-  padding-left: 3em; /* Distance from left side of page */
-}
-
-/* Styles element navbar_logo */
-
-#navbar_logo
-{
-  background-color: #fff;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#ffd900), to(#ffffff));
-  background-image: -o-linear-gradient(bottom, #ffd900 0%, #ffffff 100%);
-  background-image: linear-gradient(to top, #ffd900 0%, #ffffff 100%);
-  background-size: 100%;
-  /* ------ Color and gradient applied only to the text */ 
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  /* -------------------------------------------------- */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  cursor: pointer;
-  text-decoration: none;  /* Decoration on text */
-  font-size: 2rem;   
-}
-
-/* ES Camera Icon */
-.logo
-{
-  padding-right: 1em; 
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#ffd900), to(#ffffff)); 
-  background-image: -o-linear-gradient(bottom, #ffd900 0%, #ffffff 100%); 
-  background-image: linear-gradient(to top, #ffd900 0%, #ffffff 100%);
-  background-size: 49px 49px;
-  background-repeat: no-repeat;
-}
-
-/* Affects the position of the navbar links + button */
-.navbar_menu
-{
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;  /* y-axis alignment */
-  list-style: none;
-  text-align: right;
-  white-space: nowrap;
-}
-
-/* Specifically the links sans button */
-.navbar_item
-{
-  height: 5em; /* Aligns links to top of page */
-}
-
-/* Links */
-.navbar_links
-{
-  color: #fff;  /* Set to white */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
-  text-decoration: none;
-  padding: 0 1rem;  /* y-axis, x-axis */
-  height: 100%;
-}   
-
-.navbar_links:hover
-{
-  color: #caac00;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-/* Button positioning */
-.navbar_btn
-{
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0 1rem;
-  width: 100%;
-}
-
-/* Within the hyperlink button */
-.button 
-{
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-decoration: none;
-  padding: 0.3em 1em;
-  height: 100%;
-  width: 100%;
-  border: none;
-  outline: none;
-  border-radius: 0.3em;
-  background: #caac00;
-  color: #fff;
-  font-size: 1.5rem;
-}
-
-/* When moused over */
-.button:hover
-{
-  background: #635400;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-
-
-@media screen and (max-width: 960px) {
-  .navbar_container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    height: 80px;
-    z-index: 1;
-    width: 100%;
-    max-width: 1300px;
-    padding: 0;
-  }
-
-  /* Drop down menu */
-  .navbar_menu {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: auto;
-    grid-template-columns: auto;
-    margin: 0;
-    width: 100%;
-    position: absolute;
-    top: -1000px;
-    opacity: 0;
-    -webkit-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-    height: 50vh;
-    z-index: -1;
-  }
-
-  /* Dropdown menu when open */
-  .navbar_menu.active {
-    background: #131313;
-    top: 100%;
-    opacity: 1;
-    -webkit-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-    z-index: 99;
-    height: 50vh;
-    font-size: 1.6rem;
-  }
-
-  /* Image and NEXT */
-  #navbar_logo {
-    padding-left: 25px;
-  }
-
-  .navbar_toggle .bar {
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background: #fff;
-  }
-
-  .navbar_item {
-    width: 100%;
-  }
-
-  .navbar_links {
-    text-align: center;
-    padding: 2rem;
-    width: 100%;
-    display: table;
-  }
-
-  .navbar_btn {
-    padding-bottom: 2rem;
-  }
-
-  .button {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 80%;
-    height: 80px;
-    margin: 0;
-  }
-
-  #mobile-menu {
-    position: absolute;
-    top: 20%;
-    right: 5%;
-    -webkit-transform: translate(5%, 20%);
-        -ms-transform: translate(5%, 20%);
-            transform: translate(5%, 20%);
-  }
-
-  .navbar_toggle .bar {
-    display: block;
-    cursor: pointer;
-  }
-
-  #mobile-menu.is-active .bar:nth-child(2) {
-      opacity: 0;
-  }
-
-  #mobile-menu.is-active .bar:nth-child(1) {
-      -webkit-transform: translateY(8px) rotate(45deg);
-          -ms-transform: translateY(8px) rotate(45deg);
-              transform: translateY(8px) rotate(45deg);
-  }
-
-  #mobile-menu.is-active .bar:nth-child(1) {
-      -webkit-transform: translateY(-8px) rotate(-45deg);
-          -ms-transform: translateY(-8px) rotate(-45deg);
-              transform: translateY(-8px) rotate(-45deg);
-  }
-}
 
 /* Container for content on main page (store, gallery, LP, etc.)*/
 .main_container {
@@ -368,8 +73,8 @@ margin-right: 7em;
 
 .banner-container {
 width: 90%;
-margin-bottom: 6em;
-margin-top: 1.5em;
+margin-bottom: 20em;
+margin-top: 3em;
 }
 #banner {
 width: 100%;
@@ -380,7 +85,6 @@ border-width: 1px;
 
 /* Welcome to my website!*/
 .bio-container {
-background: rgba(0,0,0,0.5);
 height: 10em;
 width: 90%;
 margin-bottom: 6em;
@@ -399,6 +103,10 @@ display: flex;
         flex-direction: column;
 }
 
+#welcome-h1 {
+  color: #caac00;
+  font-size: 8em;
+}
 .bio-container p {
 color: white;
 }
@@ -568,7 +276,7 @@ width: 100%;
 
 .lpimg, .aboutmeimg {
 width: 23em;
-height: auto;
+height: 30em;
 -o-object-fit: cover;
    object-fit: cover;
 margin-left: 1em;
@@ -587,158 +295,78 @@ margin-right: 1em;
 line-height: 1.5em;
 }
 
-
-.bio-container h1 {
-color: #caac00;
-margin-top: 1rem;
-font-size: 3rem;
-}
-
-.footer {
-background: rgba(0,0,0,0.5);
-display: -webkit-box;
-display: -ms-flexbox;
-display: flex;
-width: 100%;
-color: #fff;
-padding: 3em 15%;
-margin-top: 10rem;
--webkit-box-pack: center;
-    -ms-flex-pack: center;
-        justify-content: center;
-}
-
-.footer div {
-text-align: center;
-
-}
-
-.contact {
--webkit-box-flex: 2;
-    -ms-flex-positive: 2;
-        flex-grow: 2;
-}
-
-.footer div h3 {
-font-weight: 300;
-margin-bottom: 1em;
-letter-spacing: 1px;
-}
-.links a {
-display: block;
-text-decoration: none;
-color: #efefef;
-margin-bottom: 1em;
-}
-
-.links a:hover {
-color: #ffd900;
-
-}
-.contact a {
-display: block;
-text-decoration: none;
-color: #efefef;
-margin-bottom: 1em;
-}
-
-.contact a:hover {
-color: #ffd900;
-}
-
-.social-icons a {
-font-size: 1em;
-cursor: pointer;
-margin: 1em;
-text-decoration: none;
-color: #fff;
-}
-
-.social-icons a:hover {
-color: #ffd900;
-}
-
-
-
-
-
 /* Media queries */
 @media screen and (max-width: 1760px) {
-.store {
-  background-color: yellow;
-  height: 30em;
-}
-.print-thumbnails img {
-  max-width: 15em;
-  height: 22.5em;
-}
-#container-h1 {
-  font-size: 2rem;
-}
-.lightPollution, .aboutMe {
-  height: 35em;
-  background-color: yellow;
-}
-#container-btn {
-  font-size: 1rem;
-}
-.lpimg, .aboutmeimg {
-  max-width: 20em;
-  height: auto;
-}
-}
+  .store {
+    height: 30em;
+  }
+  .print-thumbnails img {
+    max-width: 15em;
+    height: 22.5em;
+  }
+  #container-h1 {
+    font-size: 2rem;
+  }
+  .lightPollution, .aboutMe {
+    height: 35em;
+  }
+  #container-btn {
+    font-size: 1rem;
+  }
+  .lpimg, .aboutmeimg {
+    max-width: 20em;
+    height: auto;
+  }
+  }
 
-@media screen and (max-width: 1430px) {
-.store {
-  background-color: green;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  height: 20em;
-}
-.print-thumbnails img {
-  max-width: 10em;
-  height: 15em;
-}
-#container-h1 {
-  font-size: 1.8rem;
-}
+  @media screen and (max-width: 1430px) {
+  .store {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 20em;
+  }
+  .print-thumbnails img {
+    max-width: 10em;
+    height: 15em;
+  }
+  #container-h1 {
+    font-size: 1.8rem;
+  }
 }
 
 @media screen and (max-width: 1043px) {
-.store {
-  background-color: blue;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  height: 40em;
+  .store {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 40em;
 
-}
-.print-thumbnails {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: row;
-}
-.print-thumbnails img {
-  max-width: 10em;
-  height: 15em;
-}
-#container-h1 {
-  font-size: 1.4rem;
-}
-.instagram {
-  height: 30em;
-}
-.lightPollution, .aboutMe {
-  height: 41em;
-  background-color: blue;
-}
-.paragraph, .aboutMeParagraph {
-  line-height: 1.1rem;
-  margin-left: 1em;
-}
-#container-btn {
-  font-size: 1rem;
-}
+  }
+  .print-thumbnails {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: row;
+  }
+  .print-thumbnails img {
+    max-width: 10em;
+    height: 15em;
+  }
+  #container-h1 {
+    font-size: 1.4rem;
+  }
+  .instagram {
+    height: 30em;
+  }
+  .lightPollution, .aboutMe {
+    height: 41em;
+  }
+  .paragraph, .aboutMeParagraph {
+    line-height: 1.1rem;
+    margin-left: 1em;
+  }
+  #container-btn {
+    font-size: 1rem;
+  }
 }
 
 @media screen and (max-width: 760px) {
@@ -749,72 +377,78 @@ color: #ffd900;
   .banner-container {
     width: 90vw;
   }
-.store {
-  background-color: orange;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  height: 30em;
-  width: 90vw;
-}
-.print-thumbnails {
-  flex-direction: row;
-}
-.print-thumbnails img {
-  width: 10em;
-  object-fit: cover;
-  height: 12em;
-}
-#container-h1 {
-  font-size: 1.2rem;
-}
-.instagram {
-  height: 28em;
-  width: 90vw;
-}
-.instagram figure {
-  padding-left: 0.5em;
-  padding-right: 0.5em;
-}
-.lightPollution, .aboutMe {
-  background-color: orange;
-  height: 40em;
-  width: 90vw;
+  .store {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 30em;
+    width: 90vw;
+  }
+  .print-thumbnails {
+    flex-direction: row;
+  }
+  .print-thumbnails img {
+    width: 10em;
+    object-fit: cover;
+    height: 12em;
+  }
+  #container-h1 {
+    font-size: 1.2rem;
+  }
+  .instagram {
+    height: 28em;
+    width: 90vw;
+  }
+  .instagram figure {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+  .lightPollution, .aboutMe {
+    height: 40em;
+    width: 90vw;
 
-}
-.lpimg, .aboutmeimg {
-  max-width: 12em;
-  margin-left: 0;
-  -ms-grid-row-align: center;
-  -ms-flex-item-align: center;
-      align-self: center;
-}
-.lp-second-container, .aboutme-second-container {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.paragraph, .aboutMeParagraph{
-  width: 90%;
-  font-size: 1rem;
-}
+  }
+  .lpimg, .aboutmeimg {
+    max-width: 12em;
+    margin-left: 0;
+    -ms-grid-row-align: center;
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  .lp-second-container, .aboutme-second-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .paragraph, .aboutMeParagraph{
+    width: 90%;
+    font-size: 1rem;
+  }
 }
 
 @media screen and (max-width: 400px) {
-.store {
-  background-color: purple;
-  flex-direction: column;
-  height: 58em;
+  .store {
+    flex-direction: column;
+  }
+
+  .print-thumbnails img {
+    max-width: 8em;
+    height: 10em;
+  }
+  .instagram {
+    height: 20em;
+  }
 }
 
-.instagram {
-  height: 20em;
+@media screen and (max-width: 328px) {
+  .store {
+    height: 50em;
+    flex-direction: column;
+  }
 }
-}
-
 
 /* Desktop: 1200px
 laptop:1024px
