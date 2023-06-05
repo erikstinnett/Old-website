@@ -82,12 +82,14 @@ body
   background-repeat: no-repeat; 
 }
 .navbar-links {
+  margin-top: 15px;
   align-items: center;
   justify-content: center;
   overflow: hidden;
 }
 
 .navbar-links  a {
+  
   float: left;
   display: block;
   color: white;

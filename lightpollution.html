@@ -13,36 +13,27 @@
 </head>
 <body>
     
-   <!-- Navbar section-->
-   <nav class ="navbar">    <!-- Navbar affects everything in the navbar-->
-    <div class="navbar_container">  <!-- Affects logo + name-->
-        <a href="/"id="navbar_logo"> <!-- Top left of navbar: just logo class--> 
-            <div class="logo"><img src="icons/LOGO.svg" width="50" height="50"></div>Stinnett Photography <!-- subclass for image/icon-->
-        </a> 
-        <div class="navbar_toggle" id="mobile-menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
+    <nav class ="navbar">    <!-- Navbar affects everything in the navbar-->
+        <div class="navbar_container">  <!-- Affects logo + name-->
+            <a href="index.html"id="navbar_logo"> <!-- Top left of navbar: just logo class--> 
+                <div class="logo">
+                    <img id="camera-logo" src="icons/LOGO.svg" width="50" height="50"></div>
+                    <span id="navbar-logo">Stinnett Photography</span> <!-- subclass for image/icon-->
+            </a> 
+            <div class="nav-container">
+                <div class="navbar-links" id="navbar-links">
+                    <a href="index.html">Home</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="lightpollution.html">Light Pollution</a>
+                    <a href="aboutme.html">About Me</a>
+                    <a id="navbar_btn" href="#">Shop</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars fa-2x"></i>
+                      </a>
+                </div>
+            </div>
         </div>
-        <ul class="navbar_menu">
-            <li class="navbar_item">    <!-- Class for all the navbar items/links-->
-                <a href="index.html" class="navbar_links">Home</a> <!--Home link-->
-            </li>
-            <li class="navbar_item">    <!-- Class for all the navbar items/links-->
-                <a href="gallery.html" class="navbar_links">Gallery</a> <!--Home link-->
-            </li>
-            <li class="navbar_item">    <!-- Class for all the navbar items/links-->
-                <a href="lightpollution.html" class="navbar_links">Light Pollution</a> <!--Home link-->
-            </li>
-            <li class="navbar_item">    <!-- Class for all the navbar items/links-->
-                <a href="aboutme.html" class="navbar_links">About Me</a> <!--Home link-->
-            </li>
-            <li class = "navbar_btn"> <!-- Class for "SHOP" button-->
-                <a href="" class="button">Shop</a>
-            </li>
-        </ul>
-    </div>
-</nav>
+    </nav>
     <div class="sidebar">
         <h3 class="sidebar-title">Light Pollution</h3>
         <a href="#what_is_lp" class="bar-item">What is it?</a>
