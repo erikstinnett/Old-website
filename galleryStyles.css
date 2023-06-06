@@ -104,3 +104,34 @@
   text-decoration: none;
   color: #caac00;
 }
+
+
+@media screen and (max-width: 450px) {
+  #gallery_h1 {
+    font-size: 2rem;
+  }
+  #gallery_img {
+    width: 250px;
+    height: 250px;
+  }
+  .collections-desc {
+    height: 250px;
+    margin-top: 65px;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  #gallery_h1 {
+    font-size: 2rem;
+  }
+  #gallery_img {
+    width: 220px;
+    height: 220px;
+  }
+  .collections-desc {
+    height: 220px;
+    margin-top: 80px;
+    font-size: 1rem;
+  }
+}

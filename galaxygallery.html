@@ -6,36 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="static.css">
     <link rel="stylesheet" href="collectionstyles.css">
+    <script src="https://kit.fontawesome.com/c7601ac588.js" crossorigin="anonymous"></script>
     <title>Galaxy Collection</title>
 </head>
 <body>
     <nav class ="navbar">    <!-- Navbar affects everything in the navbar-->
         <div class="navbar_container">  <!-- Affects logo + name-->
-            <a href="/"id="navbar_logo"> <!-- Top left of navbar: just logo class--> 
-                <div class="logo"><img src="icons/LOGO.svg" width="50" height="50"></div>Stinnett Photography <!-- subclass for image/icon-->
+            <a href="index.html"id="navbar_logo"> <!-- Top left of navbar: just logo class--> 
+                <div class="logo">
+                    <img id="camera-logo" src="icons/LOGO.svg" width="50" height="50"></div>
+                    <span id="navbar-logo">Stinnett Photography</span> <!-- subclass for image/icon-->
             </a> 
-            <div class="navbar_toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+            <div class="nav-container">
+                <div class="navbar-links" id="navbar-links">
+                    <a href="index.html">Home</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="wip-page.html">Light Pollution</a>
+                    <a href="wip-page.html">About Me</a>
+                    <a id="navbar_btn" href="shopping.html">Prints</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars fa-2x"></i>
+                      </a>
+                </div>
             </div>
-            <ul class="navbar_menu">
-                <li class="navbar_item">    <!-- Class for all the navbar items/links-->
-                    <a href="index.html" class="navbar_links">Home</a> <!--Home link-->
-                </li>
-                <li class="navbar_item">    <!-- Class for all the navbar items/links-->
-                    <a href="gallery.html" class="navbar_links">Gallery</a> <!--Home link-->
-                </li>
-                <li class="navbar_item">    <!-- Class for all the navbar items/links-->
-                    <a href="lightpollution.html" class="navbar_links">Light Pollution</a> <!--Home link-->
-                </li>
-                <li class="navbar_item">    <!-- Class for all the navbar items/links-->
-                    <a href="aboutme.html" class="navbar_links">About Me</a> <!--Home link-->
-                </li>
-                <li class = "navbar_btn"> <!-- Class for "SHOP" button-->
-                    <a href="" class="button">Shop</a>
-                </li>
-            </ul>
         </div>
     </nav>
 
@@ -65,10 +58,10 @@
     <div class="footer">
         <div class="links">
             <h3>Navigate</h3>
-            <a href="//">About</a>
-            <a href="//">Shop</a>
-            <a href="//">Gallery</a>
-            <a href="lightpollution.html">Light Pollution</a>
+            <a href="wip-page.html">About</a>
+            <a href="shopping.html">Shop</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="wip-page.html">Light Pollution</a>
         </div>
         <div class="contact">
             <h3>Contact</h3>
@@ -92,3 +85,13 @@
 <script src="app.js"></script>
 <script src="slideshowJS.js"></script>
 <script src="slideshowJS2.js"></script>
+<script>
+    function myFunction() {
+      var x = document.getElementById("navbar-links");
+      if (x.className === "navbar-links") {
+        x.className += " responsive";
+      } else {
+        x.className = "navbar-links";
+      }
+    }
+</script>

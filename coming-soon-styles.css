@@ -1,0 +1,24 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    margin-top: 22em;
+}
+
+.coming-soon-h1 {
+    color: #caac00;
+    font-size: 3em;
+    font-style: italic;
+}
+
+.main-container a {
+    color: #b39c17;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.main-container a:hover {
+    font-size: 1.6em;
+    color: white;
+}
