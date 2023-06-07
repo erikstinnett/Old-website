@@ -139,7 +139,7 @@ margin-top: 0.5em;
 margin-bottom: 0.1em;
 }
 
-.store img:hover {
+.store img:hover, .store img:active {
 -webkit-transition: all .3s ease-in-out;
 -o-transition: all .3s ease-in-out;
 transition: all .3s ease-in-out;
