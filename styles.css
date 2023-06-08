@@ -73,7 +73,7 @@ margin-right: 7em;
 
 .banner-container {
 width: 90%;
-margin-bottom: 20em;
+margin-bottom: 10em;
 margin-top: 3em;
 }
 #banner {
@@ -409,6 +409,9 @@ line-height: 1.5em;
 }
 
 @media screen and (max-width: 400px) {
+  .banner-container {
+    margin-bottom: 5em;
+  }
   .store {
     flex-direction: column;
   }

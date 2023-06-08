@@ -76,3 +76,18 @@
         height: 85em;
     }
 }
+
+@media screen and (max-width: 400px) {
+    .about-prints {
+        height: 25em;
+    }
+}
+
+@media screen and (max-width: 310px) {
+    .about-prints {
+        height: 28em;
+    }
+    #container-h1 {
+        font-size: 1.8em;
+    }
+}

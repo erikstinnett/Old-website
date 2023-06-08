@@ -10,6 +10,7 @@
     color: #caac00;
     font-size: 3em;
     font-style: italic;
+    text-align: center;
 }
 
 .main-container a {
@@ -21,4 +22,43 @@
 .main-container a:hover {
     font-size: 1.6em;
     color: white;
+}
+
+@media screen and (max-width: 960px) {
+    .coming-soon-h1 {
+        font-size: 2.5em;
+    }
+    .main-container a {
+        font-size: 1.2em;
+    }
+    .main-container a:hover {
+        font-size: 1.4em;
+        color: white;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .coming-soon-h1 {
+        font-size: 2.0em;
+    }
+    .main-container a {
+        font-size: 0.9em;
+    }
+    .main-container a:hover {
+        font-size: 1.2em;
+        color: white;
+    }
+}
+
+@media screen and (max-width: 645px) {
+    .coming-soon-h1 {
+        font-size: 1.5em;
+    }
+    .main-container a {
+        font-size: 1em;
+    }
+    .main-container a:hover {
+        font-size: 0.9em;
+        color: white;
+    }
 }
