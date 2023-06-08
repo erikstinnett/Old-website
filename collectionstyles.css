@@ -73,7 +73,6 @@
   opacity: 1;
   font-size: 1.1rem;
   text-decoration: none;
-  padding-top: 10px;
   color: #caac00;
 }
 
@@ -125,6 +124,11 @@
   .collection_images {
     height: 400px;
   }
+  .desc {
+    height: 350px;
+    margin-top: 25px;
+    font-size: 0.9rem;
+  }
 }
 
 @media screen and (max-width: 350px) {
@@ -137,5 +141,10 @@
   }
   .collection_images {
     height: 350px;
+  }
+  .desc {
+    height: 300px;
+    margin-top: 25px;
+    font-size: 0.7rem;
   }
 }
