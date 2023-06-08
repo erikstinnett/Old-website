@@ -240,10 +240,10 @@ body
   }
   .navbar-links.responsive {
     position: relative;
-    width: 150px;
+    width: 200px;
   }
   .navbar-links a{
-    font-size: 15px;
+    font-size: 20px;
     position: relative;
     background: rgba(0,0,0,0.9);
   }
