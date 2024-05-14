@@ -1,0 +1,439 @@
+/*
+* Prefixed by:
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/* Affects the entire html page */
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+body 
+{
+  background:
+  -webkit-gradient(
+    linear,
+    left top, left bottom,
+    from(rgba(0, 0, 0, 0.5)),
+    to(rgba(0, 0, 0, 0.5))
+  ),
+  url('images/png1.jpg');
+  background:
+  -o-linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  ),
+  url('images/png1.jpg');
+  background:
+  linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  ),
+  url('images/png1.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size:cover;
+  position: absolute;
+  background-position: 50% 40%;
+}
+
+
+/* Container for content on main page (store, gallery, LP, etc.)*/
+.main_container {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+margin-left: 7em;
+margin-right: 7em;
+}
+
+.banner-container {
+width: 90%;
+margin-bottom: 10em;
+margin-top: 3em;
+}
+#banner {
+width: 100%;
+border-style: solid;
+border-color: #caac00;
+border-width: 1px;
+}
+
+.bio-container p {
+color: white;
+}
+/* Store container*/
+.store {
+background: rgba(0,0,0,0.5);
+height: 35em;
+width: 90%;
+margin-bottom: 3em;
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+}
+
+.print-thumbnails {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+}
+
+/* SIZE: WIDTH * 1.5 */
+.print-thumbnails img
+{
+  border-width: 1px;
+  border-style: solid;
+  border-color: #caac00;
+max-width: 20em;
+height: 30em;
+-o-object-fit: cover;
+   object-fit: cover;
+margin: 10px;
+margin-bottom: 1em;
+}
+
+#container-h1{
+color: #caac00;
+font-size: 2.5rem;
+margin-top: 0.5em;
+margin-bottom: 0.1em;
+}
+
+.store img:hover, .store img:active {
+-webkit-transition: all .3s ease-in-out;
+-o-transition: all .3s ease-in-out;
+transition: all .3s ease-in-out;
+-webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+        transform: scale(1.1);
+}
+
+.store button:hover
+{
+background: #635400;
+-webkit-transition: all 0.3s ease;
+-o-transition: all 0.3s ease;
+transition: all 0.3s ease;
+}
+
+/* Instagram container */
+.instagram {
+background: rgba(0,0,0,0.5);
+width: 90%;
+height: 46em;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+margin-bottom: 3em;
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+}
+
+.instagram figure {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+margin-bottom: 1em;
+}
+
+.instagram button {
+background: #caac00;
+border: none;
+color: white;
+padding: 0.5em 1em;
+font-size: 1.5rem;
+text-decoration: none;
+outline: none;
+border-radius: 4px;
+margin-top: 0.5em;
+}
+
+.lightPollution, .aboutMe {
+background: rgba(0,0,0,0.5);
+height: 40em;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+margin-bottom: 3em;
+width: 90%;
+color: #fff;
+position: relative;
+}
+
+#container-btn {
+background: #caac00;
+border: none;
+color: white;
+padding: 0.5em 1em;
+font-size: 1.5rem;
+text-decoration: none;
+outline: none;
+border-radius: 4px;
+margin-bottom: 1em;
+}
+
+.lightPollution button:hover, .aboutMe button:hover {
+background: #635400;
+-webkit-transition: all 0.3s ease;
+-o-transition: all 0.3s ease;
+transition: all 0.3s ease;
+}
+
+.lp-second-container, .aboutme-second-container {
+-webkit-box-orient: horizontal;
+-webkit-box-direction: normal;
+    -ms-flex-direction: row;
+        flex-direction: row;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+height: 100%;
+width: 100%;
+}
+
+.lpimg, .aboutmeimg {
+width: 23em;
+height: 30em;
+-o-object-fit: cover;
+   object-fit: cover;
+margin-left: 1em;
+margin-top: 1em;
+-ms-flex-item-align: start;
+    align-self: flex-start;
+
+}
+
+.paragraph, .aboutMeParagraph {
+margin-top: 1em;
+width: 40%;
+height: 100%;
+margin-left: 5em;
+margin-right: 1em;
+line-height: 1.5em;
+}
+
+/* Media queries */
+@media screen and (max-width: 1760px) {
+  .store {
+    height: 30em;
+  }
+  .print-thumbnails img {
+    max-width: 15em;
+    height: 22.5em;
+  }
+  #container-h1 {
+    font-size: 2rem;
+  }
+  .lightPollution, .aboutMe {
+    height: 35em;
+  }
+  #container-btn {
+    font-size: 1rem;
+  }
+  .lpimg, .aboutmeimg {
+    max-width: 20em;
+    height: auto;
+  }
+  }
+
+  @media screen and (max-width: 1430px) {
+  .store {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 20em;
+  }
+  .print-thumbnails img {
+    max-width: 10em;
+    height: 15em;
+  }
+  #container-h1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 1043px) {
+  .store {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 40em;
+
+  }
+  .print-thumbnails {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: row;
+  }
+  .print-thumbnails img {
+    max-width: 10em;
+    height: 15em;
+  }
+  #container-h1 {
+    font-size: 1.4rem;
+  }
+  .instagram {
+    height: 30em;
+  }
+  .lightPollution, .aboutMe {
+    height: 41em;
+  }
+  .paragraph, .aboutMeParagraph {
+    line-height: 1.1rem;
+    margin-left: 1em;
+  }
+  #container-btn {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  body {
+    width: 100vw;
+  }
+
+  .banner-container {
+    width: 90vw;
+  }
+  .store {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 30em;
+    width: 90vw;
+  }
+  .print-thumbnails {
+    flex-direction: row;
+  }
+  .print-thumbnails img {
+    width: 10em;
+    object-fit: cover;
+    height: 12em;
+  }
+  #container-h1 {
+    font-size: 1.2rem;
+  }
+  .instagram {
+    height: 28em;
+    width: 90vw;
+  }
+  .instagram figure {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+  .lightPollution, .aboutMe {
+    height: 40em;
+    width: 90vw;
+
+  }
+  .lpimg, .aboutmeimg {
+    max-width: 12em;
+    margin-left: 0;
+    -ms-grid-row-align: center;
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  .lp-second-container, .aboutme-second-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .paragraph, .aboutMeParagraph{
+    width: 90%;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .banner-container {
+    margin-bottom: 5em;
+  }
+  .store {
+    flex-direction: column;
+  }
+
+  .print-thumbnails img {
+    max-width: 8em;
+    height: 10em;
+  }
+  .instagram {
+    height: 20em;
+  }
+}
+
+@media screen and (max-width: 328px) {
+  .store {
+    height: 50em;
+    flex-direction: column;
+  }
+}
+
+/* Desktop: 1200px
+laptop:1024px
+tablet:768px
+phone:480px
+*/

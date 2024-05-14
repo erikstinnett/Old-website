@@ -1,0 +1,174 @@
+body {
+    background-color: black;
+    font-family:serif;
+    /* background:
+  -webkit-gradient(
+    linear,
+    left top, left bottom,
+    from(rgba(0, 0, 0, 0.5)),
+    to(rgba(0, 0, 0, 0.5))
+  ),
+  url('../imgs/background.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size:cover;
+  background-position: 50% 40%; */
+}
+.index-banner {
+    width: 100%;
+    max-height: 900px;
+    position: relative;
+    background-color: yeellow;
+    z-index: 5;
+}
+
+.banner-txt {
+    background-color: greeen;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.banner-txt h1 {
+    font-size: 60px;
+    font-weight: 700;
+    text-align: center;
+
+}
+
+.index-banner img {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    position: relative;
+}
+
+.banner-txt{
+    background-color: blacek;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner-txt h3 {
+    font-style: italic;
+}
+
+.main-container {
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height: 500px;
+    background-color: #101012;
+    display: flex;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+.main-one {
+    background-color: yeellow;
+    display: flex;
+    width: 100%;
+
+}
+.main-two {
+    background-color: bluee;
+    display: flex;
+    width: 74.5%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+}
+
+.main-one, .main-two {
+    height: 50%;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.my-work-container, .blog-container, 
+.aboutme-container, .prints-container,
+.my-gear-container, .contact-container, .tutorials-container {
+    background-color: greeen;
+    color: white;
+    width: 300px;
+    border-radius: 15px;
+    text-align: center;
+    background-size: cover;
+    background-repeat:   no-repeat;
+    background-position: center center; 
+}
+.my-work-container{
+    background-image:
+    /* linear-gradient(
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)
+      ), */url(../imgs/my-work.jpg);
+}
+
+.blog-container {
+    background-image: url(../imgs/follow-along.jpg);
+}
+.aboutme-container{
+    background-image: url(../imgs/about-me.jpg);
+}
+.prints-container{
+    background-image: url(../imgs/prints.jpg);
+}
+.my-gear-container {
+    background-image: url(../imgs/equipment.jpg);
+}
+.contact-container {
+    background-image: url(../imgs/reach-me.jpg);
+}
+.tutorials-container {
+    background-image: url(../imgs/tutorials.jpg);
+}
+.main-container h1{
+    font-style: bold;
+    background-color: blueeviolet;
+    text-align:center;
+    margin-top: 33%;
+}
+
+.my-work-container:hover, .blog-container:hover, .aboutme-container:hover, 
+.prints-container:hover, .my-gear-container:hover, .contact-container:hover,
+.tutorials-container:hover {
+    color: #caac00;
+    transition: 0.5s ease;
+}
+
+.instagram-container{
+    background-color: yeellow;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    background-color: greeen;
+}
+
+.instagram-banner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color:bluee;
+    width: 100%;
+}
+.instagram-container h1 {
+    color: white;
+}
+.instagram-container figure {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+}

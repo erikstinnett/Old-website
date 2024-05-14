@@ -3,31 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/static.css">
+    <link rel="stylesheet" href="./css/static.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://kit.fontawesome.com/c7601ac588.js" crossorigin="anonymous"></script>
     <title>Stinnett Photography</title>
 </head>
 <body>
     <div class="navbar">
         <nav class ="navbar">    <!-- Navbar affects everything in the navbar-->
             <div class="navbar_container">  <!-- Affects logo + name-->
-                <a href="index.html"id="navbar_logo"> <!-- Top left of navbar: just logo class--> 
-                    <div class="logo">
-                        <img id="camera-logo" src="icons/LOGO.svg" width="50" height="50"></div>
-                </a> 
-                <div class="nav-container">
-                    <div class="navbar-links" id="navbar-links">
-                        <a href="index.html">Home</a>
-                        <a href="gallery.html">Gallery</a>
-                        <a href="wip-page.html">Light Pollution</a>
-                        <a href="wip-page.html">About Me</a>
-                        <a id="navbar_btn" href="shopping.html">Prints</a>
-                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                            <i class="fa fa-bars fa-2x"></i>
-                          </a>
-                    </div>
+                <div class="navbar-links" id="navbar-links">
+                    <a href="index.html"> <!-- Top left of navbar: just logo class--> 
+                        <img id="camera-logo" src="icons/LOGO.svg" width="50" height="50">
+                    </a> 
+                    <a href="gallery.html">My Work</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="wip-page.html">About Me</a>
+                    <a id="navbar_btn" href="shopping.html">Prints</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars fa-2x"></i>
+                        </a>
                 </div>
             </div>
         </nav>
+    </div>
+    <div class="index-banner">
+        <img src="./imgs/index-banner.jpg" alt="">
+        <div class="banner-txt">
+            <h1>Stinnett Photography</h1>
+            <h3>Driven to explore | Fueled by wanderlust</h3>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <div class="main-one">
+            <div class="my-work-container">
+                <h1>The Portfolio</h1>
+            </div>
+            <div class="blog-container">
+                <h1>Follow Along</h1>
+            </div>
+            <div class="aboutme-container">
+                <h1>About Me</h1>
+            </div>
+            <div class="prints-container">
+                <h1>Prints</h1>
+            </div>
+        </div>
+        <div class="main-two">
+            <div class="my-gear-container">
+                <h1>What I use</h1>
+            </div>
+            <div class="tutorials-container">
+                <h1>Tutorials</h1>
+            </div>
+            <div class="contact-container">
+                <h1>Contact</h1>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="instagram-container">
+        <!-- <div class="instagram-banner">
+            <a href="https://www.instagram.com/erik.stinnett/" class="fa-brands fa-instagram"></a>
+            <h1>Follow the Adventure!</h1>
+        </div> -->
+        <div data-behold-id="QIMfm03IkQiSbt3822u4"></div>
+        <script>
+          (() => {
+            const d=document,s=d.createElement("script");s.type="module";
+            s.src="https://w.behold.so/widget.js";d.head.append(s);
+          })();
+        </script>
+    </div>
+
+    <div class="footer">
+        <div class="links">
+            <h2>Navigate</h2>
+            <a href="gallery.html">Gallery</a>
+            <a href="shopping.html">Blog</a>
+            <a href="wip-page.html">About</a>
+            <a href="wip-page.html">Prints</a>
+
+        </div>
+        <div class="contact">
+            <h2>Contact</h2>
+            <span>Email:</span>
+            <a href="mailto: erik.stinnett@icloud.com">erik.stinnett@icloud.com</a>
+        </div>
+        <div class="social">
+            <h2>Socials</h2>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/erik.stinnett/" class="fa-brands fa-instagram"></a>
+                <a href ="https://www.facebook.com/profile.php?id=100004587377124" class="fa-brands fa-facebook"></a>
+                <a href ="https://www.linkedin.com/in/erik-s-036226131/" class="fa-brands fa-linkedin"></a>
+                <a href="https://github.com/erikstinnett" class="fa-brands fa-github"></a>
+            </div>
+
+        </div>
     </div>
 </body>
 </html>

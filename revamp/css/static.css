@@ -1,81 +1,131 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .navbar 
 {
-  background: #000;
+  background-color: black;
   height: 80px;
   display: flex;
   justify-content: center; /* Center the item horizontally */
   align-items: center;     /* Center the item vertically */
   font-size: 1.2rem;      /* 1 rem = 16 px. 1.2rem == 19.2px*/
   position: sticky;       /* Keeps position absolute */
-  top: 0;                 
-  z-index: 999;           /* Position of navbar in relation to other (z axis). 999 puts navbar at very front */
+  top: 0;      
+  background-color: greeen;  
+  width: 100%;  
+  z-index: 4;
 }
-
-/* Affects logo + "Stinnett photography" */
 .navbar_container 
 {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   height: 80px;
-  z-index: 1;
-  width: 100%;
+  width: 40%;
   max-width: 2500px;
   margin-right: auto; /* Space around border to the right */
   margin-left: auto;  /* Space around border to the left */
   padding-right: 50px; 
   padding-left: 50px; /* Distance from left side of page */
+  background-color: bluee;
 }
 
-/* Styles element navbar_logo */
-
-#navbar_logo
-{
-  background-color: #fff;
-  background-image: linear-gradient(to top, #ffd900 0%, #ffffff 100%);
-  background-size: 100%;
-  /* ------ Color and gradient applied only to the text */ 
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  /* -------------------------------------------------- */
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  text-decoration: none;  /* Decoration on text */
-  font-size: 2rem;   
-}
-
-/* ES Camera Icon */
-.logo
-{
-  padding-right: 10px; 
-  background-image: linear-gradient(to top, #ffd900 0%, #ffffff 100%);
-  background-size: 49px 49px;
-  background-repeat: no-repeat; 
+#camera-logo {
+  background-color: white;
+  z-index: 999;
 }
 .navbar-links {
-  margin-top: 15px;
+  
   align-items: center;
-  justify-content: center;
   overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  background-color: yeellow;
+  width: 100%;
 }
 
-.navbar-links  a {
-  
+.navbar-links a {
+  background-color: aquamarinee;
+  height: 70px;
   float: left;
-  display: block;
+  display: flex;
+  align-items: center;
   color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 22px;
 }
 
 .navbar-links  a:hover {
+  transition: 0.3s ease;
   color: #caac00;
 }
 
 .navbar-links  .icon {
   display: none;
+}
+
+.footer {
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  width: 100%;
+  color: #fff;
+  padding: 100px 15%;
+  margin-top: 20vh;
+  justify-content: center;
+}
+
+.footer div {
+text-align: center;
+
+}
+
+.contact {
+flex-grow: 2;
+}
+
+.footer div h2 {
+font-weight: 300;
+margin-bottom: 3vh;
+letter-spacing: 1px;
+}
+.links a {
+display: block;
+text-decoration: none;
+color: #efefef;
+margin-bottom: 1vh;
+}
+
+.links a:hover {
+color: #caac00;
+
+}
+.contact a {
+display: block;
+text-decoration: none;
+color: #efefef;
+margin-bottom: 1vh;
+width: 15%;
+margin-left: auto;
+margin-right: auto;
+}
+
+.contact a:hover {
+color: #caac00;
+}
+
+.social-icons a {
+font-size: 3vh;
+cursor: pointer;
+margin: 1vh;
+text-decoration: none;
+color: #fff;
+}
+
+.social-icons a:hover {
+color: #caac00;
 }
